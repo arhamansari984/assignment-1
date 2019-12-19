@@ -2,7 +2,7 @@
 
 body
 {
-    background-color: powderblue;
+    background-color: whitesmoke;
 }
 
 #container
@@ -117,10 +117,11 @@ body
 .p-name
 {
     float: left;
-    width: 150px;
-    height: 28px;
-    margin:305px 0px 0px 75px;
+    width: 300px;
+    height: 25px;
+    margin-top:301px;
     position: absolute;
+    border-radius: 5px;
     z-index: 1;
     background-color: black;
     color: white;
@@ -189,14 +190,28 @@ body
     font-size: 20px;
     padding-left: 10px;
     padding-top: 10px;
+    list-style-type: none;
 }
 .categories ul ul
 {
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
 }
 .categories ul ul li
 {
-    margin-left:20px;
+    margin-left:15px;
+    transition: 0.5s;
+}
+
+.categories ul ul li:hover
+{
+    transition: 0.5s;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: white;
+    color:black;
+    list-style-type: square;
 }
 
 /*------------  NAV BAR  ------------*/
@@ -235,4 +250,8 @@ body
 .link:visited 
 {
     color: rgb(144, 144, 144);    
+}
+.link:link
+{
+    color: rgb(0, 0, 0);
 }
