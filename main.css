@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+/* Make sure there is no gap b/w body and its content */
+
+.wowslider
+{
+  background-color: magenta;
+  width: 1200px;
+  height: 300px;
+  margin-left: 50px;
+}
+
+body, html
+{
+    margin:0;
+    font-family: 'Rockwell';
+    background-color: powderblue;
+}
+
+#container
+{
+  height:920px;
+  width:1400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header
+{
+    background: #ffff87; /*fafa6c*/
+    width: 100%;
+    text-align: center;
+    margin:0;
+}
+
+.header h1
+{
+    font-size: 50px;
+    margin: 0;
+}
+
+/*TOP NAV*/
+
+.link-container
+{
+      height:auto;
+	   width:100%;
+	margin:0;
+}
+
+.link
+{
+    padding: 10px 20px 10px 20px;
+    color:white;
+}
+
+
+/* Make a transition on hover */
+.links a:hover
+{
+    background: rgba(255, 255, 255, 0.315);
+    transition-duration: .5s;
+    padding: 10px 50px 10px 50px;
+}
+
+/* gradually remove the extended padding */
+.links a
+{
+    transition: .5s;
+}
+
+.link-container
+{
+    background: rgb(251, 62, 62);
+}
+
+.links
+{
+    font-family: 'Rockwell';
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.link:visited
+{
+    color: black;
+}
+
+/*** SIDE NAV ***/
+.sidebar-slider
+{
+    height:800px;
+    width:50px;
+    background-color: rgb(253, 43, 43);
+    float: left;
+    margin:0;
+    z-index: 100;
+    position: relative;
+}
+
+
+.sidebar-slider:hover .sidebar
+{
+    margin-left:0px;
+    transition: .3s;
+}
+
+
+.sidebar
+{
+    height: 100%;
+    width:150px;
+    background: rgb(251, 62, 62);
+    float:left;
+    transition: .3s;
+    margin-left: -150px;
+}
+
+.links-side
+{
+    font-family: 'Rockwell';
+    font-size: 20px;
+    width: 150px;
+    height: 500px;
+}
+
+.link-side
+{
+    padding:15px 30px 15px 30px;
+    float:left;
+    color: wheat;
+    width: 90px;
+}
+
+/* Make a transition on hover */
+.links-side a:hover
+{
+    background:rgba(255, 255, 255, 0.315);
+    transition-duration: .4s;
+    padding: 30px;
+}
+
+/* gradually remove the extended padding */
+.links-side a
+{
+    transition: .4s;
+}
+
+.link-side:visited
+{
+    color: rgb(255, 255, 255);
+}
+
+
+/* content */
+.content-container
+{
+    height: 800px;
+    width: 1350px;
+    background:rgb(112, 255, 99);
+    float: left;
+    /* rgb(112, 255, 99);*/
+}
+
+.content-container h2
+{
+    margin:0;
+    float: left;
+    width: 100%;
+    padding: 20px 10px 20px 50px;
+}
+
+.content-small
+{
+    height:280px;
+    width:280px;
+    background-color: black;
+    float: left;
+    margin-left:50px;
+    border: 2px #666 solid;
+    overflow: hidden;
+}
+.content-small-img img
+{
+    height: 280px;
+    width: 280px;
+    background-color: #48d2eb;
+}
+/*#48d2eb  #6bd4e7*/
+
+.content-small-text
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align:justify;
+    transition:.75s;
+	opacity: 0.8;
+}
+
+.content-small-text h4
+{
+    padding: 20px;
+}
+
+.content-small:hover .content-small-text
+{
+    margin-top: -305px;
+}
+
+.content-medium
+{
+    height:280px;
+    width:575px;
+    background-color: #48d2eb;
+    float: left;
+    margin-left:49px;
+    border: 2px #666 solid;
+    overflow: hidden;
+}
+.content-medium-img img
+{
+    height: 300px;
+    width: 590px;
+    background-color: #48d2eb;
+}
+/*#48d2eb  #6bd4e7*/
+
+.content-medium-text
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align:justify;
+    transition:.75s;
+	opacity: 0.8;
+}
+
+.content-medium-text h4
+{
+    padding: 20px;
+}
+
+.content-medium:hover .content-medium-text
+{
+    margin-top: -325px;
+}
+
+
+.content-large
+{
+    height: 350px;
+    width: 1200px;
+    background-color: rgb(255, 0, 212);
+    float: left;
+    margin-left: 50px;
+    border: 2px #666666 solid;
+    overflow: hidden;
+}
+
+.content-large-text
+{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align:justify;
+    position: relative;
+    transition:.75s;
+	opacity: 0.8;
+}
+.content-large-text h4
+{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.content-large:hover .content-large-text
+{
+    margin-top: -380px;
+}
+
+/* footer */
+.footer
+{
+    margin: 0;
+    width:100%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #57fdfd;
+    float:left;
+}
+.footer h5
+{
+  margin: 0;
+  padding-top: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content-container a:visited
+{
+    color: black;
+}
