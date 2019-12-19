@@ -16,7 +16,7 @@ body
 .header
 {
     width: 1200px;
-    height: 100px;
+    height: 125px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -24,8 +24,8 @@ body
 
 .logo
 {
-    width:75px;
-    height: 75px;
+    width:100px;
+    height: 100px;
     background-color: white;
     float: left;
     margin: 12px 0px 12px 15px;
@@ -33,17 +33,18 @@ body
 
 .logo img
 {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
 }
 
 .nav
 {
-    width:1080px;
+    width:1055px;
     height: 100px;
     background-color: white;
     float: left;
     margin-left: 15px;
+    margin-top: 20px;
 }
 
 .slider
@@ -58,6 +59,7 @@ body
     height: 1050px;
     width: 1200px;
     background-color: magenta;
+    float: left;
 }
 
 .categories
@@ -97,10 +99,9 @@ body
     width: 300px;
     height: 300px;
     margin: 0;
-    position: absolute;
     border-radius: 3px;
+    position: absolute;
     transition: 1s;
-
 }
 
 .content:hover
@@ -151,27 +152,28 @@ body
 .brand-logo-container
 {
     width: 1200px;
-    height:150px;
+    height:120px;
     border-top: 1px solid #000;
     background-color: rgb(255, 255, 255);
-    margin: 0;
+    float: left;
 }
 .brand-logo{
     width: 100px;
     height: 100px;
     background-color: purple;
-    margin-top: 25px;
-    margin-left: 155px;
+    margin: 10px 0px 10px 155px;
     float: left;
     border-radius: 10px;
 
+    /*for a shadow effect.*/
+    /*border-bottom: 2px solid black;
+    border-left: 1px solid black;*/
 }
 .brand-logo img
 {
     width: 100px;
     height: 100px;
     border-radius: 10px;
-
 }
 
 .footer
@@ -197,6 +199,7 @@ body
     padding-left: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #fff;
+    transition: 0.5s;
 }
 .categories ul ul li
 {
@@ -206,11 +209,21 @@ body
 
 .categories ul ul li:hover
 {
-    transition: 0.5s;
     padding-bottom: 10px;
     padding-top: 10px;
+    padding-left:5px;
+    list-style-type: square;
+}
+
+.categories ul ul:hover
+{
+    transition: 0.5s;
     background: white;
     color:black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left:15px;
+   
     list-style-type: square;
 }
 
@@ -221,15 +234,17 @@ body
     height: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    text-decoration: none;
 }
 
 
 /* Make a transition on hover */
 .links a:hover
 {
-    background: #ccfd8b;
+    background-color: #fbffc6;
     transition: .5s;
     padding: 10px 50px 17px 50px;
+    cursor: pointer;
 }
 
 /* gradually remove the extended padding */
@@ -254,4 +269,89 @@ body
 .link:link
 {
     color: rgb(0, 0, 0);
+}
+
+.info
+{
+    background-color: #fff;
+    width:1000px;
+    height: 100%;
+    float: left;
+}
+
+.brand-logo-bar
+{
+    float: left;
+    height: 200px;
+    width: 1000px;
+    background-color: #fff;
+    
+}
+.brand-logo-c
+{
+    margin: 0px 400px;
+    width: 200px;
+    height:200px
+}
+.info .brand-logo-c img
+{
+    height:200px;
+    width: 200px;
+}
+
+.p-img-l
+{
+    float: right;
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    margin-top: 0px;
+}
+.p-img-l img
+{
+    height: 100%;
+    width: 100%;
+}
+.p-info-l
+{
+    width: 580px;
+    height: auto;
+    padding-bottom: 10px;
+    float: left;
+    margin: 80px 10px 0px 40px;
+    text-align: justify;
+    border-bottom: 1px solid #000;
+}
+
+
+.p-img-r
+{
+    float: left;
+    height: 350px;
+    width: 350px;
+    background-color: purple;
+    margin-top: 0px;
+}
+.p-img-r img
+{
+    height: 100%;
+    width: 100%;
+}
+.p-info-r
+{
+    width: 580px;
+    height: auto;
+    padding-bottom: 10px;
+    float: right;
+    margin: 80px 10px 0px 40px;
+    text-align: justify;
+    border-bottom: 1px solid #000;
+}
+
+.info-container
+{
+    margin: 0;
+    float: left;
+    height:360px;
+    width: 1000px;
 }
