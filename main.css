@@ -1,10 +1,15 @@
-* {margin: 0 auto;}
+* {margin: 0 auto; font-family: "Rockwell";}
+
+body
+{
+    background-color: powderblue;
+}
 
 #container
 {
-    height: 1900px;
+    height: 1850px;
     width: 1200px;
-    background-color: powderblue;
+    background-color: white;
 }
 
 
@@ -12,8 +17,10 @@
 {
     width: 1200px;
     height: 100px;
-    background-color: #ff9;
+    background-color: rgb(255, 255, 255);
 }
+
+
 
 .logo
 {
@@ -24,13 +31,19 @@
     margin: 12px 0px 12px 15px;
 }
 
+.logo img
+{
+    width: 75px;
+    height: 75px;
+}
+
 .nav
 {
     width:1080px;
-    height: 50px;
+    height: 100px;
     background-color: white;
     float: left;
-    margin: 25px 0px 12px 15px;
+    margin-left: 15px;
 }
 
 .slider
@@ -51,52 +64,94 @@
 {
     width: 200px;
     height: 100%;
-    background-color: rgb(117, 255, 104);
+    background-color: black;
     float: left;
+    color: white;
 }
 
+/* -----------------  CONTENT  --------------------*/
 .content-area
 {
     width:1000px;
     height: 100%;
-    background-color: rgb(194, 253, 99);
+    background-color: rgb(255, 255, 255);
     float: left;
+    position: relative;
+    z-index: 1;
 }
 
 .content
 {
     width: 300px;
     height: 300px;
-    background-color: purple;
+    background-color: royalblue;
     float: left;
     margin: 32px 10px 10px 20px;
-    transition: .5s;
+    transition: .75s;
     border-radius: 5px;
+    z-index: 1;
 
 }
-.read-more-btn
+.content img
 {
     width: 300px;
     height: 300px;
-    border-radius: 5px;
-    background-color: red;
-    float: left;
-    z-index: 50px;
-    
-    
-    
+    margin: 0;
+    position: absolute;
+    border-radius: 3px;
+    transition: 1s;
+
 }
 
 .content:hover
 {
     transition: 0.5s;
-    border-bottom-left-radius: 150px;
+    border-bottom-left-radius: 160px;
 }
+.content:hover img
+{
+    transition: 0.5s;
+    border-bottom-left-radius: 160px;
+}
+
+.p-name
+{
+    float: left;
+    width: 150px;
+    height: 28px;
+    margin:305px 0px 0px 75px;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.read-more-btn
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: rgb(71, 71, 71);
+    float: left;
+    position: relative;
+    z-index: -2;
+}
+.read-more-btn h3
+{
+    margin: 275px 0px 0px 5px;
+    font-size: 15px;
+    color: white;
+}
+
+
+/*----------------------------------------*/
 
 .brand-logo-container
 {
     width: 1200px;
     height:150px;
+    border-top: 1px solid #000;
     background-color: rgb(255, 255, 255);
     margin: 0;
 }
@@ -121,9 +176,63 @@
 .footer
 {
     width:1200px;
-    height:100px;
+    height:50px;
     background-color: rgb(0, 0, 0);
     float: left;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.categories ul
+{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.categories ul ul
+{
+    padding-left: 20px;
+}
+.categories ul ul li
+{
+    margin-left:20px;
+}
+
+/*------------  NAV BAR  ------------*/
+.link
+{
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
+/* Make a transition on hover */
+.links a:hover
+{
+    background: #ccfd8b;
+    transition: .5s;
+    padding: 10px 50px 17px 50px;
+}
+
+/* gradually remove the extended padding */
+.links a
+{
+    transition: .5s;
+}
+
+.links
+{
+    font-family: 'Rockwell';
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;   
+    margin-top: 25px; 
+}
+
+.link:visited 
+{
+    color: rgb(144, 144, 144);    
+}
