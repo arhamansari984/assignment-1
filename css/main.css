@@ -1,4 +1,8 @@
-* {margin: 0 auto; font-family: "Rockwell";}
+* 
+{
+    margin: 0 auto;
+    font-family: "Rockwell";
+}
 
 body
 {
@@ -12,7 +16,7 @@ body
     background-color: white;
 }
 
-
+/* -----------------  HEADER  ---------------- */
 .header
 {
     float: left;
@@ -21,9 +25,6 @@ body
     height: 125px;
     background-color: rgb(255, 255, 255);
 }
-
-
-
 .logo
 {
     width:100px;
@@ -33,13 +34,30 @@ body
     margin: 12px 0px 12px 15px;
     border: 1px solid #000;
 }
-
 .logo img
 {
     width: 100px;
     height: 100px;
 }
 
+/* ----------------WOW SLIDER---------------- */
+.slider
+{
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(255, 123, 123);
+    float: left;
+}
+
+.sca-container
+{
+    height: 1050px;
+    width: 1200px;
+    background-color: magenta;
+    float: left;
+}
+
+/*------------  NAV BAR  ------------*/
 .nav
 {
     width:1055px;
@@ -50,30 +68,49 @@ body
     margin-top: 20px;
 }
 
-.slider
+.links
 {
-    width: 1200px;
-    height: 500px;
-    background-color: rgb(255, 123, 123);
-    float: left;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 10px 10px 10px; 
+    margin-top: 25px; 
 }
 
-.blah
+.link
 {
-    height: 1050px;
-    width: 1200px;
-    background-color: magenta;
-    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: "Open Sans Condensed";
 }
 
-.categories
+
+/* Make a transition on hover */
+.links a:hover
 {
-    width: 200px;
-    height: 100%;
-    background-color: black;
-    float: left;
-    color: white;
+    background-color: #686868;
+    transition: .5s;
+    padding: 10px 30px 12px 30px;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+/* gradually remove the extended padding */
+.links a
+{
+    transition: .5s;
+}
+
+
+.link:visited 
+{
+    color: rgb(144, 144, 144);    
+}
+.link:link
+{
+    color: rgb(0, 0, 0);
+}
+
 
 /* -----------------  CONTENT  --------------------*/
 .content-area
@@ -119,6 +156,8 @@ body
     border-bottom-left-radius: 160px;
 }
 
+.content:hover .p-name{ transition:.4s;background-color:#76ff4d;color:black;}
+
 .p-name
 {
     float: left;
@@ -131,6 +170,12 @@ body
     background-color: black;
     color: white;
     text-align: center;
+
+}
+.p-name h3
+{
+    font-family: monospace;
+    padding-top:4px;
 }
 
 .read-more-btn
@@ -138,10 +183,10 @@ body
     width: 300px;
     height: 300px;
     border-radius: 5px;
-    background-color: rgb(71, 71, 71);
+    background-color: #ff9;
     float: left;
     position: relative;
-    text-decoration: none;
+    /*text-decoration: none;*/
     z-index: -2;
     cursor: pointer;
 }
@@ -149,11 +194,82 @@ body
 {
     margin: 275px 0px 0px 5px;
     font-size: 15px;
+    color: #111;
+}
+.read-more-btn a {text-decoration: none;}
+
+/* ---------------  SIDE BAR  ---------------- */
+
+.categories
+{
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    float: left;
     color: white;
 }
 
+.categories ul
+{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    list-style-type: none;
+    font-family: "Montserrat";
 
-/*----------------------------------------*/
+}
+.categories ul ul
+{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    transition: 0.5s;
+}
+.categories ul ul li
+{
+    margin-left:15px;
+    transition: 0.5s;
+    font-family: "Montserrat";
+    font-size: 16px;
+
+}
+
+.categories ul ul li:hover
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left:5px;
+    list-style-type: square;
+}
+
+.categories ul ul:hover
+{
+    transition: 0.5s;
+    background: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color:black;
+    list-style-type: square;
+}
+
+.categories ul ul a{
+    text-decoration: none;
+}
+.categories ul ul a:visited 
+{
+    color: rgb(97, 97, 97);    
+}
+.categories ul ul a:link
+{
+    color: rgb(255, 255, 255);
+}
+.categories ul ul li
+{
+    padding:5px 0px 0px 0px;
+}
+
+
+/*------------------  BRAND LOGO CONTAINER  ------------------*/
 
 .brand-logo-container
 {
@@ -166,7 +282,6 @@ body
 .brand-logo{
     width: 100px;
     height: 100px;
-    background-color: purple;
     margin: 10px 0px 10px 155px;
     float: left;
     border-radius: 10px;
@@ -182,100 +297,10 @@ body
     border-radius: 10px;
 }
 
-.footer
-{
-    width:1200px;
-    height:50px;
-    background-color: rgb(0, 0, 0);
-    float: left;
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.categories ul
-{
-    font-size: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    list-style-type: none;
-}
-.categories ul ul
-{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
-    transition: 0.5s;
-}
-.categories ul ul li
-{
-    margin-left:15px;
-    transition: 0.5s;
-}
-
-.categories ul ul li:hover
-{
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left:5px;
-    list-style-type: square;
-}
-
-.categories ul ul:hover
-{
-    transition: 0.5s;
-    background: white;
-    color:black;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left:15px;
-   
-    list-style-type: square;
-}
-
-/*------------  NAV BAR  ------------*/
-.link
-{
-    width: 50px;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
-}
 
 
-/* Make a transition on hover */
-.links a:hover
-{
-    background-color: #fbffc6;
-    transition: .5s;
-    padding: 10px 50px 17px 50px;
-    cursor: pointer;
-}
 
-/* gradually remove the extended padding */
-.links a
-{
-    transition: .5s;
-}
 
-.links
-{
-    font-family: 'Rockwell';
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 10px 10px 10px;   
-    margin-top: 25px; 
-}
-
-.link:visited 
-{
-    color: rgb(144, 144, 144);    
-}
-.link:link
-{
-    color: rgb(0, 0, 0);
-}
 
 .info
 {
@@ -294,7 +319,7 @@ body
 }
 .brand-logo-c
 {
-    margin: 20px 400px;
+    margin: 20px 350px;
     width: 200px;
     height:200px;
 }
@@ -327,7 +352,12 @@ body
     margin: 80px 10px 0px 40px;
     text-align: justify;
     border-bottom: 1px solid #000;
+
 }
+.p-info-l h2{
+    font-family: 'Open Sans Condensed';
+}
+.p-info-r h2{font-family: 'Open Sans Condensed';}
 
 
 .p-img-r
@@ -360,24 +390,40 @@ body
     float: left;
     height:360px;
     width: 1000px;
+
 }
-.categories ul ul a{
-    text-decoration: none;
-}
-.categories ul ul a:visited 
+
+
+
+
+
+.contact
 {
-    color: rgb(144, 144, 144);    
-}
-.categories ul ul a:link
-{
-    color: rgb(0, 0, 0);
-}
-.categories ul ul li
-{
-    padding:5px 0px 0px 0px;
+    height: 100%;
 }
 
 .contact h2
 {
-    padding-bottom: 10px;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-family: "Inconsolata";
+    font-size: 50px;
+}
+
+.contact h3 {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-family: "Open Sans Condensed";
+    font-size: 25px;
+}
+
+.footer
+{
+    width:1200px;
+    height:50px;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
 }
